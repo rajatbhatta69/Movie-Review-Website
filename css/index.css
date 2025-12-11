@@ -15,7 +15,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: rgb(41, 41, 41);
 }
 
@@ -42,14 +42,16 @@ nav {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 50%;
+    /* width: 50%; */
+    gap: 1rem;
     margin-right: 1%;
 }
 
 .navItems {
     padding: 1%;
+    list-style: none;
 }
 
 .navItems a {
@@ -63,17 +65,17 @@ nav {
 }
 
 .navbar .postReviewBtn {
-    padding: 8px 8px;
+    padding: 3px 8px;
     border-radius: 10px;
     border: none;
-    background-color: rgb(234, 97, 0);
+    background: linear-gradient(to bottom right, rgb(144, 60, 0), rgb(234, 97, 0));
     color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 600;
 }
 
 .navbar .postReviewBtn:hover {
-    background-color: rgb(207, 86, 0);
+    background: linear-gradient(to bottom right, rgb(116, 48, 0), rgb(197, 82, 0));
     color: rgba(255, 255, 255, 0.845);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -81,30 +83,33 @@ nav {
 
 main {
     background-color: #212121;
-    /* min-width: 100vw; */
-    min-height: 90vh;
 }
 
 .container {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .highlighted-movie {
-    width: 35%;
+    width: 100%;
+    height: 66vh;
+    /* border: 2px solid white; */
     display: flex;
+    flex: row;
     justify-content: center;
-    align-items: start;
-    margin-top: 5vh;
+    /* align-items: start; */
 }
 
 .highlighted-movie-subcontainer {
-    width: 80%;
+    width: 90%;
+    height: 100%;
+    /* border: 2px solid; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -115,6 +120,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid white; */
 }
 
 .highlighted-movie-poster {
@@ -126,12 +132,19 @@ main {
     color: white;
     font-size: 1.3rem;
     margin-top: 5px;
+    margin-left: 8px;
     margin-bottom: 5px;
     font-weight: 400;
 }
 
+.highlighted-movie-title-and-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
-.highlighted-movie-rating p {
+.highlighted-movie-rating span{
     color: white;
 }
 
@@ -144,7 +157,7 @@ main {
 }
 
 .highlighted-movie-explanation-text {
-    text-align: left;
+    text-align: justify;
     color: white;
     font-size: 0.8rem;
     margin: 10px 10px;
@@ -154,7 +167,7 @@ main {
     padding: 8px 8px;
     border-radius: 10px;
     border: none;
-    background-color: rgb(234, 97, 0);
+    background: linear-gradient(to bottom right, rgb(144, 60, 0), rgb(234, 97, 0));
     color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 600;
@@ -162,18 +175,20 @@ main {
 }
 
 .highlighted-movie-explanation-readmore:hover {
-    background-color: rgb(207, 86, 0);
+    background: linear-gradient(to bottom right, rgb(116, 48, 0), rgb(197, 82, 0));
     color: rgba(255, 255, 255, 0.845);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
 
 .more-movies-container {
-    width: 55%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
+
 .latest-reviews-text{
+    margin-top: 4px;
     padding: 1px;
 }
 
@@ -195,16 +210,34 @@ main {
 }
 
 .movie-cards {
-    width: 30%;
+    width: 180px;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: rgba(104, 104, 104, 0.183);
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.movie-cards p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 3px;
 }
 
 .movie-cards:hover {
-    width: 32%;
+    width: 183px;
     transition: all 0.2s ease-in-out;
 }
 
 .movie-cards-image {
     width: 100%;
     border-radius: 12px;
-    height: 50%;
+    /* height: 50%; */
+
 }
