@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu';
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(41, 41, 41);
+}
+
+.logo {
+    margin-left: 4%;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: white;
+}
+
+.searchBtn {
+    /* position: relative;
+    right: 10%; */
+    padding: 1% 1%;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.searchBtn:focus {
+    border: none;
+    outline: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-right: 1%;
+}
+
+.navItems {
+    padding: 1%;
+}
+
+.navItems a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.navItems a:hover {
+    color: rgb(227, 227, 227);
+}
+
+.navbar .postReviewBtn {
+    padding: 8px 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(234, 97, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navbar .postReviewBtn:hover {
+    background-color: rgb(207, 86, 0);
+    color: rgba(255, 255, 255, 0.845);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+main {
+    background-color: #212121;
+    /* min-width: 100vw; */
+    min-height: 90vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.highlighted-movie {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 5vh;
+}
+
+.highlighted-movie-subcontainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlighted-movie-poster-and-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlighted-movie-poster {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.highlighted-movie-title {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+
+.highlighted-movie-rating p {
+    color: white;
+}
+
+.highlighted-movie-explanation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.highlighted-movie-explanation-text {
+    text-align: left;
+    color: white;
+    font-size: 0.8rem;
+    margin: 10px 10px;
+}
+
+.highlighted-movie-explanation-readmore {
+    padding: 8px 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(234, 97, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.highlighted-movie-explanation-readmore:hover {
+    background-color: rgb(207, 86, 0);
+    color: rgba(255, 255, 255, 0.845);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.more-movies-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+.latest-reviews-text{
+    padding: 1px;
+}
+
+.latest-reviews-text span{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 4px 10px;
+}
+
+.more-movies-subcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    /* height: 90%; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.movie-cards {
+    width: 30%;
+}
+
+.movie-cards:hover {
+    width: 32%;
+    transition: all 0.2s ease-in-out;
+}
+
+.movie-cards-image {
+    width: 100%;
+    border-radius: 12px;
+    height: 50%;
+}
